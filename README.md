@@ -1,44 +1,67 @@
-The Frappe Language Toggle Application is a custom JavaScript (JS) app developed to toggle between English (eng) and Arabic (ar) languages in the Frappe framework. The primary purpose of this application is to provide an intuitive and seamless way for users to switch between the two languages on the fly. This document outlines the app's functionalities, setup instructions, and usage.
+<div align="center">
+  ![Project Logo](https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png
+  <h2 align="center">EmPress Language Toggle: Your Gateway to a Seamless Bilingual Experience</h2>
+  <p align="center">
+    A user-centric JavaScript application powering real-time switching between English and Arabic languages.
+    <br />
+    <a href="https://github.com/empress-eco/language_toggle">Explore the Docs</a>
+    ·
+    <a href="https://github.com/empress-eco/language_toggle/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/empress-eco/language_toggle/issues">Request Feature</a>
+  </p>
+</div>
 
-**Features**
+## About The Project
 
-Real-Time Language Switching**: The application allows users to change the interface language between English and Arabic in real time, without having to refresh the page.
+### 📖 Overview
 
-#Persistent Language Settings: The selected language setting is saved in the user's session data, ensuring the language preference is persistent across different sessions for a more personalized user experience.
+EmPress Language Toggle is a JavaScript solution enhancing user interaction on multilingual platforms. It allows users to switch instantly between English and Arabic without page refreshes, providing a fluent and intuitive multilingual experience.
 
-##Prerequisites
+### 🌟 Key Features
+- **Real-Time Language Switching:** Instantly switch between English and Arabic.
+- **Persistent Language Settings:** The app remembers your language preference across different sessions.
 
-This application is built on top of the Frappe framework. Before you can use this app, make sure that you have a Frappe environment set up. If you don't have it, you can follow these instructions to set up Frappe on your system.
+## Technical Stack and Setup Instructions
 
-##installation
-1. Navigate to your Frappe bench folder in your terminal.
+### Prerequisites
+This application is built on the robust Framework. Ensure you have a Empress environment set up before using this app.
 
-    `cd frappe-bench`
+### Installation
+Follow these steps to get EmPress Language Toggle running on your system:
 
-2. Get the application from GitHub using the below command.
+```sh
+# Navigate to your Empress bench folder
+cd Empress-bench
 
-   ` bench get-app https://github.com/zaid2229/language-toggle.git`
+# Clone the application from GitHub
+git clone https://github.com/empress-eco/language_toggle.git
 
-   
-3. Install the application onto your site.
+# Install the application onto your site
+bench --site [site-name] install-app change_langauge
 
-    `bench --site [site-name] install-app change_langauge
-`
-4. Build the site
+# Build the site
+bench build
 
-   ` bench build`
-   
-5. Migrate the database.
+# Migrate the database
+bench --site [site-name] migrate
+```
+### Usage
+Post-installation, locate the language toggle switch on the top-right corner of your Empress application. Click to switch seamlessly between English and Arabic.
 
-   ` bench --site [site-name] migrate`
+## Contribution Guidelines
+We welcome your contributions! Follow these steps to contribute:
 
-##Usage
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
-Once the app is installed, you will see a language toggle switch on the top-right corner of your Frappe application. You can simply click on this switch to toggle between English and Arabic.
+## License and Acknowledgements
 
+### License
+This project falls under the MIT License. Your contributions will also be licensed under the MIT License.
 
-
-https://github.com/zaid2229/language-toggle/assets/60132555/a9d28d13-8789-431c-857e-61eb0341408d
-
-
-
+### Acknowledgements
+Special thanks to the Empress Community for their foundational contributions. Their innovation and dedication form the backbone of this project. We're profoundly grateful for their pioneering work and ongoing support.
